@@ -1,7 +1,5 @@
 ## Fase 1 - Levantar el ambiente
 
-![Fase 1](image.png)
-
 ## Fase 2 — Tabla de Hallazgos
 
 | # | Descripción del problema | Archivo | Línea aprox. | Principio violado | Riesgo |
@@ -23,8 +21,6 @@
 
 ### Prueba 1 — Login válido
 
-![Prueba 1](image-1.png)
-
 **Datos sensibles en la respuesta:**
 
 - `"user": "admin"` → expone el nombre del usuario autenticado.  
@@ -37,8 +33,6 @@ No. En un endpoint de login nunca se debe devolver el hash de la contraseña ni 
 ---
 
 ### Prueba 2 — SQL Injection
-
-![Prueba 2](image-2.png)
 
 **¿Qué ocurrió?**
 
@@ -53,9 +47,6 @@ Aunque la autenticación falló, el sistema procesó la entrada sin bloquear car
 ---
 
 ### Prueba 3 — Registro con contraseña débil
-
-![Prueba 3](image-6.png)
-![Prueba 3](image-7.png)
 
 **Request rechazado:**
 
